@@ -34,46 +34,53 @@
 <div id="rightcontent">
 
 <h1>Research Projects</h1>
-<h2>Dynamic Resource Allocation for Apache Spark Applications<span class="year">Aug 2018 - May 2019</span></h2>
-<div class="location"> University of Connecticut</div>
-<div class="comments">Designed and implemented a middleware to dynamically allocate computing resources for Apache Spark applications to improve resource utilization.</div>
-<div class="comments">We design and implement a middleware service for dynamically allocating computing resources for Apache Spark applications on cloud platforms. It leverages the current and prior resource usage to predict future demand, and uses either an a priori calculated or dynamically threshold value to adjust the amount of allocated resources for the future time intervals. Our experiments using six different Apache Spark applications on both physical and virtual clusters demonstrate that our approaches can improve application performance while reducing resource requirements significantly in most cases compared to static resource allocation strategies.</div>
+  
+<h2>Facial Micro-Expression Analysis in Interview Videos for Autism Diagnosis<span class="year">Oct 2022 - May 2023</span></h2>
+<div class="location"> West Virginia University</div>
+<div class="comments">Focused on analyzing face micro-expressions of the participants using contrastive learning method in Autism Diagnostic Observation Schedule (ADOS) hour-long videos.</div>
+<div class="comments">Designed a system to classify autism/control groups by extracting micro-expression subtle movements feature via optical flow/attention mechanism/local patch of interest in unsupervised way.</div>
+<div class="comments">Obtained 97.32% accuracy showing the efficiency of capturing subtle facial muscle changes for autism diagnosis.</div>
+  
+<h2>Face Dynamics Analysis for Autism Diagnosis on Interview Videos<span class="year">Jul 2019 - Aug 2020</span></h2>
+<div class="location"> West Virginia University</div>
+<div class="comments">Constructed a 3-category system to classify participants in hour-long videos into Autism, Autism Spectrum, and Non-Spectrum by leveraging well-established computer vision tools from spatio-temporal feature (LPQ-TOP) extraction and marginal fisher analysis (MFA) to few-shot learning (FSL) and scene-level fusion of facial dynamics.  </div>
+<div class="comments">Demonstrated the potential of the proposed automatic ASD trait classification system (achieving 91.72 accuracy on the Caltech ADOS video dataset) and the benefits of few-shot learning and scene-level fusion strategy by extensive ablation studies.  </div>
+  
+<h2>Facial Traits Rating Prediction<span class="year">Dec 2020 - June 2021</h2>
+<div class="location"> West Virginia University</div>
+<div class="comments">Designed a deep regression model for facial traits rating prediction via transfer learning.</div>
+<div class="comments">Investigated the difference between autism and normal groups on making facial trait judgement. </div>
+<div class="comments">Demonstrated different facial areas are involved for traits judgement between autism and normal.</div>
 
-<h2>Improving Performance of Apache Spark Jobs<span class="year">Feb 2017 - Mar 2019</span></h2>
-<div class="location"> University of Connecticut</div>
-<div class="comments">Implemented a Spark optimizer in Java to predict and mitigate potential task stragglers and skewed task distribution problems for Apache Spark platform to improve job performance by up to 71 %.</div>
-<div class="comments">We present an analytical model driven approach that can predict the possibility of such problems by executing an application with a limited amount of input data and recommend ways to address the identified problems by repartitioning input data (in case of task straggler problem) and/or changing the locality configuration setting (in case of skewed task distribution problem). The novelty of our approach lies in automatically predicting the potential problems a priori based on limited execution data and recommending the locality setting and partition number. Our experimental result using 9 Apache Spark applications on two different clusters shows that our model driven approach can predict these problems with high accuracy and improve the performance by up to 71%.</div>
+<h2>Transformer-based Face Morphing and De-Morphing<span class="year">Dec 2021 - Sep 2022</h2>
+<div class="location"> West Virginia University</div>
+<div class="comments">Developed a transformer-based semantic image manipulation GAN scheme to do face morphing. </div>
+<div class="comments">Designed special loss functions (Wing loss, biometric loss, perceptual loss, and pixel-wise mean square
+error) to support the optimization in latent code learning of an given face image. </div> 
+<div class="comments">Extended the study to face de-morphing task based on a reference image. </div>
+<div class="comments">Demonstrated its superiority to StyleGAN-based morphing methods. </div> 
+  
+<h2>Fusion-based Few-Shot Morphing Attack Detection and Fingerprinting<span class="year">Sep 2020 - Nov 2021</h2>
+<div class="location"> West Virginia University</div>
+<div class="comments">Extended Morphing Attack Detection (MAD) from supervised learning to few-shot learning and from binary detection to multiclass morphing attack fingerprinting (MAF). </div>
+<div class="comments">Proposed a few-shot learning (FSL) method to learn discriminative fusion features of two sensor pattern noise (PRNU, Noiseprint) by factorized bilinear coding (FBC). </div> 
+<div class="comments">Generated a high-resolution database named Doppelgänger composing of look-alike face pairs without biological connections, and corresponding different morphing attacks result. </div>
+<div class="comments">Extensive experimental results show the outstanding performance. </div>  
+  
+<h2>Face Recognition (FR) and Face Quality Analysis<span class="year">Aug 2016 - June 2019</h2>
+<div class="location"> West Virginia University</div>
+<div class="comments">Investigated the relationship between face image quality and performance of deep learning based cross-quality face recognition quantitatively. We showed that deep models can allow quality changes to some degrees, but not too large, for the test face images. And we proposed one promising direction for deep learning is to further improve its capability in building the relations between face images with large quality gaps. </div>
+<div class="comments">Gathered a dataset with 356.4K face images of Chinese celebrities crawled online after cleaning. </div>   
+<div class="comments">Presented an overview of existing deep learning based face recognition algorithms and databases. </div> 
 
-<h2>Automatic Tuning of Apache Spark Configuration<span class="year">Nov 2016 - May 2018</h2>
-<div class="location"> University of Connecticut</div>
-<div class="comments">Constructed application specific performance influence models to tune the performance of applications running on Apache Spark platform.</div>
-<div class="comments">We present a framework for tuning the performance of Apache Spark through optimizing configuration setting. In this framework, it identifies the best model for an application from multiple machine learning algorithms, and uses recursive random search to find the configuration combination based on predicted runtime by this model. This framework is evaluated with different machine learning algorithms as well as different techniques to select the best performance models. By using a representative set of open source applications, we demonstrate that the framework can help to improve the performance of these applications significantly.</div>
-
-<h2>Interference Modeling of Apache Spark Jobs<span class="year">Aug 2015 - May 2017</span></h2>
-<div class="location"> University of Connecticut</div>
-<div class="comments">Developed a dynamical job predictor in Java to predict the execution time of multiple Spark jobs in Xen through integrating resource consumption and task event profiles for Spark jobs run in Xen virtual machines, and implemented a job scheduler in Java and Bash to reduce the total execution time.</div>
-<div class="comments">We develop analytical models to estimate the effect of interference among multiple Apache Spark jobs running concurrently on job execution time in virtualized cloud environment. We evaluated the accuracy of our models using four real-life applications (Page rank, K-means, Logistic regression, and Word count) on a 6 node cluster while running up to four jobs concurrently. Our experimental results show that the model can achieve high prediction accuracy, which ranges between 86% to 99% when the number of concurrent jobs are four and all start simultaneously, and ranges between 71% to 99% when the number of concurrent jobs are four and start at different times. Moreover, our experimental results show that our scheduler can reduce the average execution time of individual jobs between 47% and 26%, and reduces the total execution time 2%–13%.</div>
-
-<h2>Performance Prediction for Apache Spark Jobs<span class="year">Aug 2014 - May 2015</span></h2>
-<div class="location">University of Connecticut</div>
-<div class="comments">Developed a Spark analytics system in Java to parse JSON logs of Apache Spark event, and predict time, I/O overhead, memory consumption using analytical and Machine Learning approaches.</div>
-<div class="comments">We present a simulation driven prediction model that can predict job performance with high accuracy for Apache Spark platform. Specifically, as Apache spark jobs consist of multiple sequential stages, the presented prediction model simulates the execution of the actual job by using only a fraction of the input data, and collect execution traces (execution time, memory consumption and I/O overhead) to predict job performance for each execution stage individually. We evaluated our prediction framework using four real-life applications (WordCount, Logistic Regression, K-Means clustering and PageRank) on a 13 node cluster, and experimental results show that the model can achieve high prediction accuracy, which is up to 98% for time prediction, 99% for memory prediction, and 97% for I/O prediction.</div>
-
-<h2>Configurations evolution analysis of cloud software<span class="year">Oct 2014 - Feb 2016</span></h2>
-<div class="location">University of Connecticut</div>
-<div class="comments">Implemented an automatic tool CSMiner based on source code call graphs for automatically analyzing configuration changes of cloud software such as Apache Cassandra, Apache Hadoop.</div>
-<div class="comments">We design an automated tool (CSMiner) leveraging static program analysis techniques that helps users to understand how and where a particular setting is used in a program and how settings have evolved across different versions of a software system. CSMiner was applied on four different open source software packages, namely, Apache Cassandra, ElasticSearch, Apache Hadoop, and Apache HBase, and CSMiner identified 109 (out of 109), 109 (out of 113), 811 (out of 847), and 160 (out of 167) settings for these software packages respectively. In each case, CSMiner successfully identified the changes in configuration settings across multiple versions with high accuracy.</div>
-
-<h2>Learning environment for Smart Grid security<span class="year">Aug 2013 - Feb 2014</span></h2>
-<div class="location">Georgia State University</div>
-<div class="comments">Implemented an online system using JSP, jQuery, MySQL, Bash to schedule Smart Grid emulator for courses design. Implemented course information display and scheduling calendar using JSP and jQuery, developed Java Servlets and Bash scripts to launch and control Smart Grid emulator, loaded user profile and course schedule information into MySQL database.</div>
-<div class="comments">We design and implement an integrated learning environment for the education of smart grid security. The core components of this environment are smart grid simulator and a learning website. Based on this learning environment, we design course projects and learning materials in teaching, so that students can better grasp the knowledge of smart grid security.</div>
-
-<h2>Optimizing Hadoop MapReduce<span class="year">Nov 2011 - Dec 2012</span></h2>
-<div class="location">Beihang University</div>
-<div class="comments">Applied BTrace to trace MapReduce job functions, and monitor resource consumption using Ganglia. Implemented a MapReduce optimizer in Java through constructing Hadoop performance model for execution time prediction and designing heuristic search algorithm to find near optimal configurations for MapReduce jobs.</div>
-<div class="comments">We implement an experience guided configuration optimizer- Predator, which does not treat the optimization problem as a pure black-box problem but utilizes useful experience learned from Hadoop MapReduce configuration practice to assist the optimizing process. The optimizer uses job execution time estimated by a practical MapReduce cost model as the objective function, and classifies Hadoop MapReduce parameters into different groups by their different tunable levels to shrink search space. Furthermore, the optimization algorithm of the optimizer uses the idea of subspace division to prevent local optimum problem, and it could also reduce the searching time by cutting down the cost in visiting unpromising points in search space. In the experiments on Hadoop clusters, it can improve the MapReduce execution by up to 88%.</div>
-</div>
+<h2>Software Development Process Management<span class="year">Dec 2009 - Dec 2011</h2>
+<div class="location"> Beihang University</div>  
+<div class="comments">Developed Software Project Management System to manage software development process using C# on .Net framework with MySQL.  </div>
+<div class="comments">Designed and implemented Defect Measurement Tool to gather, analyze, and measure defects generated during the whole software development process cycle, and constructed a series of defect measure metrics to evaluate individual performance during life cycle using C#, .Net framework, MySQL. </div> 
+  
+<h2>Wireless Network Management System<span class="year">Mar 2010 - Sep 2010</h2>
+<div class="location"> Beihang University</div>  
+<div class="comments">Implement Wireless Network Management System to monitor wireless access points and access controllers of Beijing subway transportation wireless network using C# on .Net framework with MySQL.  </div>
 
 <div id="footer"></div>
 
